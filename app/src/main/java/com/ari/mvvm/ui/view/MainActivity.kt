@@ -5,7 +5,9 @@ import android.os.Bundle
 import androidx.activity.viewModels
 import com.ari.mvvm.databinding.ActivityMainBinding
 import com.ari.mvvm.ui.viewmodel.QuoteViewModel
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     private var _binding: ActivityMainBinding? = null
