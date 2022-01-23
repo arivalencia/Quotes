@@ -52,6 +52,7 @@ dependencies {
     def arch_version = "2.1.0"
     def fragment_version = "1.4.0"
     def activity_version = "1.4.0"
+    def room_version = "2.4.1"
 
     // ViewModel
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
@@ -73,5 +74,9 @@ dependencies {
     // Dagger hilt
     implementation "com.google.dagger:hilt-android:$hilt_version"
     kapt "com.google.dagger:hilt-android-compiler:$hilt_version"
+
+    // Room
+    implementation "androidx.room:room-ktx:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
 
 }

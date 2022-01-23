@@ -20,16 +20,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         quoteViewModel.onCreate()
-
-        quoteViewModel.quoteModel.observe(this){ currentQuote ->
-            binding.quote = currentQuote
-        }
-
-        quoteViewModel.isLoading.observe(this){ isLoading ->
-            binding.isLoading = isLoading
-        }
-
-        binding.root.setOnClickListener { quoteViewModel.randomQuote() }
+        binding.viewModel = quoteViewModel
+        binding.lifecycleOwner = this
 
     }
 
