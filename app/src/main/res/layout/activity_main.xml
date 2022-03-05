@@ -32,7 +32,7 @@
             android:textSize="24sp"
             android:textStyle="italic"
             tools:text="Lorem ipsum"
-            android:text="@{viewModel.currentQuote.quote}" />
+            android:text="@{viewModel._currentQuote.quote}" />
 
         <TextView
             android:id="@+id/tv_author"
@@ -46,7 +46,7 @@
             android:textSize="20sp"
             android:textStyle="italic"
             tools:text="Hello World!"
-            android:text="@{viewModel.currentQuote.author}" />
+            android:text="@{viewModel._currentQuote.author}" />
 
         <ProgressBar
             android:id="@+id/progress"
@@ -57,7 +57,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             tools:visibility="visible"
-            android:visibility="@{viewModel.isLoading ? View.VISIBLE : View.GONE}" />
+            android:visibility="@{viewModel._isLoading ? View.VISIBLE : View.GONE}" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
